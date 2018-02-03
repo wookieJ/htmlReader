@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.web.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="1100.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="htmlApp.controller.MainPaneController">
+   <top>
+      <fx:include fx:id="menuPane" source="MenuPane.fxml" />
+   </top>
+   
+   <center>
+      <SplitPane fx:id="splitPane" dividerPositions="0.2, 0.83" BorderPane.alignment="CENTER">
+        <items>
+            <fx:include fx:id="treeViewPane" source="TreeViewPane.fxml" />
+            <fx:include fx:id="webPane" source="WebPane.fxml" />
+            <fx:include fx:id="contentPane" source="ContentPane.fxml" />
+        </items>
+      </SplitPane>
+   </center>
+   
+   <bottom>
+      <fx:include fx:id="controlPane" source="ControlPane.fxml" />
+   </bottom>
+</BorderPane>
