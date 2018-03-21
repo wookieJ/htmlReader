@@ -1,3 +1,1 @@
-$ cat .gitattributes
-*.rb linguist-language=Java
 sources/* linguist-vendored
