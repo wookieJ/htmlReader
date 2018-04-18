@@ -1,2 +1,2 @@
 # offlineReader
-Program służący do przeglądania offline stron internetowych napisany w języku JAVA FX.
+Application used for offline viewing the websites, written in JAVA FX.
